@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RatingComponent } from './rating/rating.component';
-
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 
 @NgModule({
@@ -13,6 +13,7 @@ import { RatingComponent } from './rating/rating.component';
   ],
   imports: [
     BrowserModule,
+    AngularFontAwesomeModule,
     AppRoutingModule
   ],
   providers: [],

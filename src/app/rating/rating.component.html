@@ -8,8 +8,18 @@
  </div>
  <h2>Rate Intelligence of Damian:</h2>
 
-<i class="pi pi-star-o" id="star1"  (click)= changeIcon($event)></i>
-<i class="pi pi-star-o" id="star2" (click)= changeIcon($event)></i>
-<i class="pi pi-star-o"  id="star3" (click)= changeIcon($event)></i>
-<i class="pi pi-star-o" id="star4"  (click)= changeIcon($event)></i>
-<i class="pi pi-star-o" id="star5" (click)= changeIcon($event)></i>
+
+<!-- <i [ngClass] = "starstate1 ? 'pi pi-star-o' : 'pi pi-star'" id="star1" (click)=toggleClass($event)></i> 
+<i [ngClass] = "starstate2 ? 'pi pi-star-o' : 'pi pi-star'" id="star2" (click)=toggleClass($event)></i> 
+<i [ngClass] = "starstate3 ? 'pi pi-star-o' : 'pi pi-star'" id="star3" (click)=toggleClass($event)></i> 
+<i [ngClass] = "starstate4 ? 'pi pi-star-o' : 'pi pi-star'" id="star4" (click)=toggleClass($event)></i> 
+<i [ngClass] = "starstate5 ? 'pi pi-star-o' : 'pi pi-star'" id="star5" (click)=toggleClass($event)></i>  -->
+
+ <!-- <fa name="cog" animation="spin"></fa> -->
+
+<span *ngFor="let star of starList">
+  <i class="pi pi-star-o" id="{{star}}" (click)=toggleClass2($event.srcElement)></i>
+</span>
+
+
+
